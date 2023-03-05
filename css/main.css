@@ -51,7 +51,7 @@ main {
     margin-top: 150px;
     text-align: center;
     border-radius: 30%;
-    border: solid 4px aqua;
+    border: solid 0.4px aqua;
 }
 
 main .main-logo {
@@ -73,6 +73,9 @@ main .main-input-container {
     width: 35rem;
     border-radius: 100px;
     border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -81,4 +84,52 @@ main .main-input input {
     height: 40px;
     border: none;
     outline: none;
+}
+main .main-input-container:hover{
+    box-shadow: 0 1px 6px 0 black;
+    border-color: white;
+}
+
+main .main-input .search-icon, .micro-icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+
+main .main-input .search-icon {
+    background-image: url("https://img.icons8.com/android/24/000000/search.png");
+}
+
+main .main-input .micro-icon {
+    background-image: url("https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png");
+    cursor: pointer;
+}
+
+main .main-buttons {
+    widows: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div {
+    display: inline-block;
+}
+
+main .main-buttons button {
+    height: 36px;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 8px;
+    padding: 0 15px;
+    margin: 0 4px;
+}
+
+main .main-buttons button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    color: #222;
+    
 }
